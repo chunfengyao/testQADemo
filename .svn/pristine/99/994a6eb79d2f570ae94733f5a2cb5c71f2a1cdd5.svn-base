@@ -7,13 +7,12 @@
     <data>
         <variable
             name="StartQADataBean"
-            type="com.ycf.qaapi.viewModel.dataBean.StartQADataBean"/>
+            type="com.sinitek.qaapi.viewModel.dataBean.StartQADataBean"/>
     </data>
     
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        style="@style/AppTheme.innerView">
+        android:layout_height="wrap_content">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -29,15 +28,23 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:orientation="vertical"
                 android:background="@null">
                 <android.support.design.widget.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-                <android.support.design.button.MaterialButton
+                    android:id="@+id/LinkDefInput"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/startSelf"
+                    android:layout_gravity="center"
+                    android:text="@={StartQADataBean.customSchema}"
+                    android:hint="@string/inputLinkDef"
+                    />
+                <Button
+                    android:id="@+id/changeLinkDefBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/changeLinkDef"
+                    android:changeSchemaListener="@{StartQADataBean}"
                     />
             </LinearLayout>
             <LinearLayout
@@ -56,6 +63,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:saveUserInput="@{StartQADataBean}"
                     android:text="@={StartQADataBean.userInput}"
                     android:hint="@string/inputParams"/>
                 <LinearLayout
@@ -65,19 +73,17 @@
                     android:layout_gravity="center"
                     android:background="@null"
                     >
-                    <android.support.design.button.MaterialButton
+                    <Button
                         android:id="@+id/startBtn"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/start"
-                        style="?android:attr/buttonBarButtonStyle"
                         android:addStartQAListener="@{StartQADataBean}"/>
-                    <android.support.design.button.MaterialButton
+                    <Button
                         android:id="@+id/startSelfBtn"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/startSelf"
-                        style="?android:attr/buttonBarButtonStyle"
                         android:addStartSelfListener="@{StartQADataBean}"/>
                 </LinearLayout>
             </LinearLayout>

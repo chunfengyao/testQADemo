@@ -14,7 +14,17 @@ android {
     }
     buildTypes {
         release {
+            debuggable false
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            //调试
+            debuggable true
+            //自动去除未使用的代码
             minifyEnabled false
+            //jni调试信息
+            jniDebuggable true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -29,5 +39,7 @@ dependencies {
     implementation group: 'com.alibaba', name: 'fastjson', version: '1.2.54'
     //本地缓存数据存储
     implementation 'com.anupcowkur:reservoir:3.1.0'
+//    //RxAndroid
+//    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'     //reservoir当前仅支持rxjava1。不支持rxjava2
 
 }

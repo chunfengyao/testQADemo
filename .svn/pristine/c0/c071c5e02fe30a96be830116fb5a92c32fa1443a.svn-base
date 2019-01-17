@@ -1,4 +1,4 @@
-package com.ycf.qaapi;
+package com.sinitek.qaapi;
 
 import android.databinding.DataBindingUtil;
 import android.net.Uri;
@@ -6,9 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.anupcowkur.reservoir.Reservoir;
-import com.ycf.qaapi.common.ComValue;
-import com.ycf.qaapi.databinding.PageFirstBinding;
-import com.ycf.qaapi.viewModel.dataBean.StartQADataBean;
+import com.sinitek.qaapi.common.ComValue;
+import com.sinitek.qaapi.databinding.PageFirstBinding;
+import com.sinitek.qaapi.viewModel.dataBean.StartQADataBean;
 
 import java.io.IOException;
 

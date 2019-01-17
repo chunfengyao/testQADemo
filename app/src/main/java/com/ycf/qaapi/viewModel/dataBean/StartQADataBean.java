@@ -16,9 +16,17 @@ import com.ycf.qaapi.common.AppConfigs;
 import java.util.Map;
 
 public class StartQADataBean extends BaseDateBean {
+    //跳转链接
     private Uri QAUri;
+    //参数列表
     private Map<String, String> paramsMap;
+    //用户输入的参数信息
     private String userInput;
+    //自定义的链接前缀
+    private String schemaStr;
+    //用户输入的链接前缀
+    private String customSchema;
+
     public final static String EncryptKey = AppConfigs.QAEncryptKey;
 
     public Uri getQAUri() {
@@ -52,5 +60,21 @@ public class StartQADataBean extends BaseDateBean {
 
     public void setUserInput(String userInput) {
         this.userInput = userInput;
+    }
+
+    public String getSchemaStr() {
+        return schemaStr;
+    }
+
+    public void setSchemaStr(String schemaStr) {
+        this.schemaStr = schemaStr;
+    }
+
+    public String getCustomSchema() {
+        return customSchema;
+    }
+
+    public void setCustomSchema(String customSchema) {
+        this.customSchema = customSchema;
     }
 }

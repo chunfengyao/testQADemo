@@ -7,7 +7,10 @@
     <string name="paramsList">该次调用携带的参数如下：</string>
     <string name="noUrlTips">请填写合理的参数</string>
     <string name="forwardFailed">已向系统推送跳转链接，但是跳转失败了。即将为您打开快应用的安装页面。</string>
+    <string name="forwardSelfFailed">已向系统推送跳转链接，但是跳转失败了。</string>
     <string name="inputLinkDef">请输入自定义的链接前缀以及主机名。\nEXP：ycf://testqa.ycf.com/</string>
     <string name="changeLinkDef">修改当前前缀</string>
+    <string name="changeLinkDefSucess">当前前缀已修改为：\n</string>
+    <string name="propertySaveFailed">抱歉，数据保存失败了。</string>
 
 </resources>

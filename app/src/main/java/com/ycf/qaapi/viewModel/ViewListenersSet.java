@@ -6,8 +6,6 @@ package com.ycf.qaapi.viewModel;
  *
  * * */
 
-import android.view.View;
-
 /**
  * 各种直接在layout中引用的按键事件的集合。
  */

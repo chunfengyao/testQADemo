@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ycf.qaapi">
+    package="com.sinitek.qaapi">
 
     <application
+        android:name="com.sinitek.qaapi.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name="com.ycf.qaapi.FirstPage">
+        <activity
+            android:name="com.sinitek.qaapi.FirstPage"
+            android:launchMode="standard">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -20,12 +23,12 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="ycf"
-                    android:host="testqa.ycf.com" />
+                <data android:scheme="sinitek"
+                    android:host="testqa.sinitek.com" />
                 <!--测试命令：
-                adb shell am start -W -a android.intent.action.VIEW -d "ycf://testqa.ycf.com?param1=111&param2=222" com.ycf.qaapi
+                adb shell am start -W -a android.intent.action.VIEW -d "sinitek://testqa.sinitek.com?param1=111&param2=222" sinitekitek.qaapi
                 或者：快应用中：
-                router.push("ycf://testqa.ycf.com?param1=111&param2=222")
+                router.push("sinitek://testqa.sinitek.com?param1=111&param2=222")
                 -->
             </intent-filter>
         </activity>

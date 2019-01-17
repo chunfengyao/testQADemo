@@ -1,4 +1,4 @@
-package com.ycf.qaapi.common;
+package com.sinitek.qaapi.common;
 /* * *
  * created by:   cf.yao
  * on:           2019.一月.14   15:32
@@ -9,14 +9,14 @@ package com.ycf.qaapi.common;
 public class ComValue {
 
     //本app页面的跳转链接
-    public static final String LASchema = "ycf";
-    public static final String LAHost = "testqa.ycf.com";
+    public static final String LASchema = "sinitek";
+    public static final String LAHost = "testqa.sinitek.com";
 
     public static final String customQASchemaName = "customQASchema";
     public static final String userInputName = "userInput";
 
 
-    public static final String defaultQASchema = "ycf://testqa.ycf.com/";
+    public static final String defaultQASchema = "sinitek://testqa.sinitek.com/";
     public static final String defaultUserInput = "param1=1&param2=2";
 
     public static final String LinkModel = "://";
