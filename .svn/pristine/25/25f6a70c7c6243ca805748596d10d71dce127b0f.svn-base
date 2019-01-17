@@ -1,0 +1,15 @@
+package com.sinitek.qaapi.viewModel;
+/* * *
+ * created by:   cf.yao
+ * on:           2019.一月.10   16:50
+ * Des:
+ *
+ * * */
+
+import android.content.Intent;
+import android.databinding.BindingAdapter;
+import android.view.View;
+
+import com.sinitek.qaapi.viewModel.dataBean.StartQADataBean;
+
+

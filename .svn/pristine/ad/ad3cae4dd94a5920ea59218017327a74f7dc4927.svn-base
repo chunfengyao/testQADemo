@@ -1,0 +1,11 @@
+package com.sinitek.qaapi.common;
+/* * *
+ * created by:   cf.yao
+ * on:           2019.一月.10   16:02
+ * Des:
+ *
+ * * */
+
+public class AppConfigs {
+    public static final String QAEncryptKey = "111111111111111111111";
+}

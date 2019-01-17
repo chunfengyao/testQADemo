@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">快应用调用测试</string>
+    <string name="inputParams">请输入需要在启动快应用时传递过去的参数：\nEXP：param1=1&amp;param2=2</string>
+    <string name="start">启动快应用</string>
+    <string name="startSelf">传给本身并打开该页面</string>
+    <string name="echoQALinkParams">收到来自快应用的调用</string>
+    <string name="paramsList">该次调用携带的参数如下：</string>
+    <string name="noUrlTips">请填写合理的参数</string>
+    <string name="forwardFailed">已向系统推送跳转链接，但是跳转失败了。即将为您打开快应用的安装页面。</string>
+
+</resources>

@@ -1,0 +1,22 @@
+package com.sinitek.qaapi.common;
+/* * *
+ * created by:   cf.yao
+ * on:           2019.一月.14   15:32
+ * Des:          公用的固定值
+ *
+ * * */
+
+public class ComValue {
+
+    //本app页面的跳转链接
+    public static final String LASchema = "sinitek";
+    public static final String LAHost = "testqa.sinitek.com";
+    //快应用跟页面的跳转链接
+    public static final String QASchema = "hap";
+    public static final String QAHost = "app/com.sinitek.test";
+
+    public static final String LinkModel = "://";
+    public static final String QATestPagePath = "/";
+    public static final String QAAppUrlInAppCenter = "UriTo华为快应用中心的对应应用的安装页面";
+
+}
